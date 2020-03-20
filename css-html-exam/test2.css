@@ -1,0 +1,215 @@
+
+body{
+    height: 1000px;
+    text-align: center;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url("Web-Design.jpg");
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    
+}
+
+
+header nav{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: sticky;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    
+}
+
+header li {
+    margin: 20px;
+}
+
+header * {
+    display: inline;
+}
+
+header li a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.wrapper {
+    gap: 185px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+
+.box{
+    text-align: center;
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    
+
+}
+
+p{
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+.textHeader{
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.menu {
+    float: right;
+    margin: 5px;
+}
+
+
+.logo{
+    display: flex;
+    justify-content: left;
+    margin-block-end: 20px;
+}
+
+
+#logo2{
+    background: url('iphone1.jpg');
+    background-repeat: no-repeat;
+    background-size:  cover;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: grid;
+    grid-template-columns: 1fr;
+
+
+}
+
+#logo3{
+    background: url('iphone2.jpg');
+    background-repeat: no-repeat;
+    background-size:  cover;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: grid;
+    grid-template-columns: 1fr;
+    
+
+}
+
+#logo4{
+    background: url('iphone3.jpg');
+    background-repeat: no-repeat;
+    background-size:  cover;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+div{
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+i{
+    float: right;
+}
+
+
+.bottom-logo2{
+    font-size: 15px;
+    display: flex;
+    margin-top: 50px;
+    border-top: 1px solid beige;
+
+}
+
+.textLogo2{
+    display: grid;
+    grid-template-columns: 0.97fr;
+
+    font-size: 15px;
+    font-family: fantasy;
+}
+
+
+.subcribe{
+    background: brown;
+    border-radius: 15px;
+    font-size: 30px;
+    
+
+}
+
+
+
+/* @media screen and (max-width:800px) {
+
+
+    body{
+        height: 500px;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-image: url("Web-Design.jpg");
+        
+    }
+
+
+    #logo2{
+        background: url('iphone1.jpg');
+        background-repeat: no-repeat;
+        background-size:  cover;
+        display: grid;
+        grid-template-columns: 0.50fr;
+    
+    
+    }
+    #logo3{
+        background: url('iphone1.jpg');
+        background-repeat: no-repeat;
+        background-size:  cover;
+        display: grid;
+        grid-template-columns: 0.50fr;
+    
+    
+    }
+    #logo4{
+        background: url('iphone1.jpg');
+        background-repeat: no-repeat;
+        background-size:  cover;
+        display: grid;
+        grid-template-columns: 0.50fr;
+    
+    
+    }
+ 
+
+} */
+   
+
+
