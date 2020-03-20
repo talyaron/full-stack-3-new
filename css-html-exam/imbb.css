@@ -1,0 +1,258 @@
+body{
+    margin: auto;
+    width:1000px;
+    background: linear-gradient(to bottom right, purple,teal, teal);
+}
+#container {
+    margin: auto;
+    width: 100%;
+    height: 750px;
+        
+}
+.header{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    border-bottom: 1px solid #aaa;
+    
+}
+.logo{
+    padding-top: 45px;
+    padding-bottom: 70px;
+    display: flex;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center; 
+    font-size: 2em;
+}
+.bLogo{
+    background: linear-gradient(to bottom right, rgb(236, 150, 164), rgb(224, 75, 100));
+    /* padding:5px; */
+    border-radius: 10px;
+    width: 40px;
+   
+}
+.navBar{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;	
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.button{
+    background: rgb(238, 45, 77);
+    color: white;
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:Arial, Helvetica,sans-serif;
+    font-weight:300;
+    text-align:center; 
+    transition: all 0.2s;
+}
+.mainBody{
+    display: grid;
+    margin-top: 60px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:5px;
+}
+.centerCardPic{
+    background-image: url("galaxy.jpg");
+    height: 200px;
+    margin-bottom: 0px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.leftCardPic{
+    background-image: url("blue.jpg");
+    height: 290px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    
+}
+.leftCard{
+    color: white;
+}
+
+.rightCardPic{
+    background-image: url("mars.jpg");
+    height: 290px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+   
+}
+.rightCard{
+    color: white;
+}
+.title{
+    position: relative;
+    left: 27%;
+    top:-5%;
+    color: white;
+    background: pink;
+    border-radius: 50px;
+    text-align:center; 
+    padding:0.3em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    width: 30%;
+}
+.centerCardDetails{
+    background-color: white;
+}
+.time{
+    text-align:center; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.83em;
+    padding: 1em;
+}
+.headLine{
+    text-align:center; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    padding: 1em;
+}
+
+.text{
+    text-align:center; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    padding: 1em;
+    border-bottom: 1px solid #aaa;
+}
+.reoprts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  
+    padding: 1em;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 50px;
+}
+.reoprts img{
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    
+}
+.profile{
+    display: flex;
+    justify-content: flex-start;	
+}
+.profileName{
+    text-align:center; 
+    padding-top: 0.3em;
+    padding-bottom: 1em;
+}
+.notifications{
+    display: flex;
+    justify-content: flex-end;
+    text-align:center; 
+    padding-top: 0.3em;
+    padding-bottom: 1em;	
+
+}
+.titleLeft{
+    position: relative;
+    
+    background-color: blue;
+    left: 27%;
+    top:-5%;
+    color: white;
+    border-radius: 50px;
+    text-align:center; 
+    padding:0.3em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    width: 30%;
+}
+.titleRight{
+    position: relative;
+    
+    background-color: tomato;
+    left: 27%;
+    top:-5%;
+    color: white;
+    border-radius: 50px;
+    text-align:center; 
+    padding:0.3em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    width: 40%;
+}
+.arrow{
+    size: 3em;
+}
+
+@media only screen and (max-width: 360px) {
+  
+    .mainBody {
+        display: grid;
+        grid-template-columns: 100%;
+        width:75%;
+        margin:auto;
+        gap:30px;
+    }
+    .leftCardPic{
+        background-image: url("blue.jpg");
+        height: 420px;
+        margin-bottom: 0px;
+        border-radius: 10px;
+        
+    }
+
+    .rightCardPic{
+        background-image: url("mars.jpg");
+        height: 420px;
+        margin-bottom: 0px;
+        border-radius: 10px;
+       
+    }
+    .headLine{
+        text-align:center; 
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.6em;
+        padding: 1em;
+    }
+    
+.time{
+    text-align:center; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    padding: 1em;
+}
+
+.text{
+    text-align:center; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    padding: 1em;
+    border-bottom: 1px solid #aaa;
+}
+
+
+
+.navBar{
+  
+   position: absolute;
+   left:-1000px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.logo{
+    padding-top: 45px;
+    padding-bottom: 70px;
+    display: flex;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center; 
+    font-size: 4em;
+    position: relative;
+    left:400px;
+}
+
+
+}
