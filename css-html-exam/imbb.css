@@ -59,27 +59,27 @@ body {
     transition: all 0.2s;
 }
 
-.mainBody {
+.cardsWrapper {
     display: grid;
     margin-top: 60px;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 5px;
 }
 
-/* duplication in code */
+.card {
+    border-radius: 10px;
+}
+
 .centerCardPic {
     background-image: url("galaxy.jpg");
     height: 200px;
     margin-bottom: 0px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
 }
 
 .leftCardPic {
     background-image: url("blue.jpg");
     height: 290px;
     margin-bottom: 0px;
-    border-radius: 10px;
 }
 
 .leftCard {
@@ -90,7 +90,6 @@ body {
     background-image: url("mars.jpg");
     height: 290px;
     margin-bottom: 0px;
-    border-radius: 10px;
 }
 
 .rightCard {
@@ -110,10 +109,23 @@ body {
     width: 30%;
 }
 
+.titleLeft {
+    position: relative;
+    background-color: blue;
+    width: 30%;
+}
+
+.titleRight {
+    position: relative;
+    background-color: tomato;
+    width: 40%;
+}
+
 /* Tal: it should be near the center card */
 
 .centerCardDetails {
     background-color: white;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .time {
@@ -169,32 +181,6 @@ body {
     text-align: center;
     padding-top: 0.3em;
     padding-bottom: 1em;
-}
-
-.titleLeft {
-    position: relative;
-    background-color: blue;
-    left: 27%;
-    top: -5%;
-    color: white;
-    border-radius: 50px;
-    text-align: center;
-    padding: 0.3em 1.2em;
-    margin: 0 0.3em 0.3em 0;
-    width: 30%;
-}
-
-.titleRight {
-    position: relative;
-    background-color: tomato;
-    left: 27%;
-    top: -5%;
-    color: white;
-    border-radius: 50px;
-    text-align: center;
-    padding: 0.3em 1.2em;
-    margin: 0 0.3em 0.3em 0;
-    width: 40%;
 }
 
 .arrow {
