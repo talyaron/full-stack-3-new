@@ -1,4 +1,5 @@
 
+/* Tal: css code not very clear */
 body{
     height: 1000px;
     text-align: center;
@@ -85,7 +86,7 @@ h3{
     margin: 5px;
 }
 
-
+/* Tal: duplication of code in logos */
 .logo{
     display: flex;
     justify-content: left;
@@ -131,6 +132,7 @@ h3{
 
 }
 
+/* why so general? */
 div{
     color: white;
     text-shadow: 2px 2px 4px #000000;
@@ -140,7 +142,7 @@ i{
     float: right;
 }
 
-
+/* Tal: again, duplication */
 .bottom-logo2{
     font-size: 15px;
     display: flex;
