@@ -109,6 +109,31 @@ body {
     margin: 0 0.3em 0.3em 0;
     width: 30%;
 }
+.titleLeft {
+    position: relative;
+    background-color: blue;
+    left: 27%;
+    top: -5%;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    padding: 0.3em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    width: 30%;
+}
+
+.titleRight {
+    position: relative;
+    background-color: tomato;
+    left: 27%;
+    top: -5%;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    padding: 0.3em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    width: 40%;
+}
 
 /* Tal: it should be near the center card */
 
@@ -171,31 +196,7 @@ body {
     padding-bottom: 1em;
 }
 
-.titleLeft {
-    position: relative;
-    background-color: blue;
-    left: 27%;
-    top: -5%;
-    color: white;
-    border-radius: 50px;
-    text-align: center;
-    padding: 0.3em 1.2em;
-    margin: 0 0.3em 0.3em 0;
-    width: 30%;
-}
 
-.titleRight {
-    position: relative;
-    background-color: tomato;
-    left: 27%;
-    top: -5%;
-    color: white;
-    border-radius: 50px;
-    text-align: center;
-    padding: 0.3em 1.2em;
-    margin: 0 0.3em 0.3em 0;
-    width: 40%;
-}
 
 .arrow {
     size: 3em;
