@@ -90,7 +90,7 @@ i {
     margin-right: 10px;
     margin-top: 10px;
 }
-
+/* duplication of code in columns */
 .card-column-1 {
     display: flex;
     flex-direction: column;
