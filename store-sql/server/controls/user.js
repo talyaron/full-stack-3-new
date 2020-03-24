@@ -3,16 +3,27 @@ const pool = require('./db');
 const login = (req, res) => {
 
     const { username, password } = req.body;
-    console.log(`......${username}, ${password}..........`)
+   
 
     try {
         pool.getConnection((err, connection) => {
             if (err) throw err;
 
-            connection.query(`INSERT INTO users (username, password) VALUE ('${username}', '${password}'); `, (error, result, fields) => {
+            connection.query(`SELECT username, password FROM sql_store.users WHERE username = '${username}'`, (error, result, fields) => {
                 if (error) throw error;
-
-                res.send({ results: result });
+                if(result.length === 0){
+                    res.send({ error: 'No such username' });
+                    
+                } else {
+                    const user = result[0];
+                    if(user.password == password){
+                        res.send({success:true});
+                    } else {
+                        res.send({success:false, error:'Inncorect password',  user})
+                    }
+                }
+                connection.release();
+               
             })
 
         })
@@ -27,7 +38,7 @@ const login = (req, res) => {
 const register = (req, res) => {
 
     const { username, password, email } = req.body;
-    console.log(`......${username}, ${password}..........`)
+   
 
     try {
         pool.getConnection( (err, connection) => {
