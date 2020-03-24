@@ -110,13 +110,10 @@ body {
 }
 
 .titleLeft {
-    position: relative;
     background-color: blue;
-    width: 30%;
 }
 
 .titleRight {
-    position: relative;
     background-color: tomato;
     width: 40%;
 }
