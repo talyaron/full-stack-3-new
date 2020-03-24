@@ -10,7 +10,6 @@ export default function () {
             <form className="pure-form pure-form-stacked" onSubmit={addItem}>
 
                 <legend>הוספת פריט חדש</legend>
-
                 <label htmlFor="item_name">שם הפריט</label>
                 <input id="item_name" name='item_name' type="text" placeholder="שם הפריט" />
                 <span className="pure-form-message">This is a required field.</span>
