@@ -46,3 +46,8 @@ export function sendRegister(e) {
             })
         })
 }
+
+export function addItem(e){
+    e.preventDefault();
+    console.log(e.target.elements)
+}

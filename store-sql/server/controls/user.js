@@ -11,7 +11,7 @@ const login = (req, res) => {
             
             //search for a username in the databse
 
-            connection.query(`SELECT username, password FROM sql_store.users WHERE username = '${username}'`, (error, result, fields) => {
+            connection.query(`SELECT username, password FROM users WHERE username = '${username}'`, (error, result, fields) => {
                 if (error) throw error;
                 if(result.length === 0){
                     res.send({ error: 'No such username' });
@@ -48,12 +48,12 @@ const register = (req, res) => {
 
             //first, check if user allready exist
 
-            connection.query(`SELECT username FROM sql_store.users WHERE username = '${username}'`, (error, result, fields) => {
+            connection.query(`SELECT username FROM users WHERE username = '${username}'`, (error, result, fields) => {
                 if (error) throw error;
 
                 //If user don't exist, add to DB
 
-                if (!result.length) {
+                if (result.length === 0) {
                     connection.query(`INSERT INTO users (username, password, email) VALUE ('${username}', '${password}','${email}'); `, (error, result, fields) => {
                         if (error) {
                             res.send({success:false, error })
