@@ -24,7 +24,7 @@ export default function () {
                 <span className="pure-form-message">This is a required field.</span>
 
                 <label htmlFor="state">נשים או גברים</label>
-                <select id="state" name='item-price'>
+                <select id="state" name='item_gender'>
                     <option value='women'>נשים</option>
                     <option value='men'>גברים</option>
                     <option value='unisex'>יוני-סקס</option>
