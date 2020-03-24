@@ -7,6 +7,7 @@ import {addItem} from '../../../controls/sendToDB';
 export default function () {
     return (
         <div className='page'>
+            <h1>הוספת פריטים</h1>
             <form className="pure-form pure-form-stacked" onSubmit={addItem}>
 
                 <legend>הוספת פריט חדש</legend>
