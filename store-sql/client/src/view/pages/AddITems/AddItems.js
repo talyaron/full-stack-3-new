@@ -16,11 +16,11 @@ export default function () {
                 <span className="pure-form-message">This is a required field.</span>
 
                 <label htmlFor="item-catNumber">מק״ט</label>
-                <input id="item-catNumber" name='item-catNumber' type="text" placeholder="מק״ט" />
+                <input id="item-catNumber" name='item_catNumber' type="text" placeholder="מק״ט" />
                 <span className="pure-form-message">This is a required field.</span>
 
                 <label htmlFor="item-price">מחיר</label>
-                <input id="item-price" name='item-price' type="text" placeholder="מחיר" />
+                <input id="item-price" name='item_price' type="text" placeholder="מחיר" />
                 <span className="pure-form-message">This is a required field.</span>
 
                 <label htmlFor="state">נשים או גברים</label>
