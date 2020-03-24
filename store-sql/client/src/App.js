@@ -10,6 +10,8 @@ import {
 
 //pages
 import Login from './view/pages/Login/Login';
+import Store from './view/pages/Store/Store';
+import AddItems from './view/pages/AddITems/AddItems';
 
 function App() {
   return (
@@ -19,7 +21,13 @@ function App() {
           <li>
             <Link to="/">Login</Link>
           </li>
-         </ul>
+          <li>
+            <Link to="/add-items">Add Items</Link>
+          </li>
+          <li>
+            <Link to="/store">Store</Link>
+          </li>
+        </ul>
 
         <hr />
 
@@ -34,7 +42,12 @@ function App() {
           <Route exact path="/">
             <Login />
           </Route>
-          
+          <Route path='/add-items'>
+            <AddItems />
+          </Route>
+          <Route path='/store'>
+            <Store />
+          </Route>
         </Switch>
       </div>
     </Router>
