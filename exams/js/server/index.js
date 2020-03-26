@@ -30,6 +30,15 @@ app.post('/message', (req, res) => {
 
 })
 
+app.get('/authors',(req, res)=>{
+    let authors = new Set();
+    messages.forEach(message=>{
+        authors.add(message.author)
+    })
+    let authorsArray = [...authors]
+    res.send(authorsArray);
+})
+
 app.get('/message-by-author', (req, res) => {
     let authors = {}
     messages.forEach(message => {
