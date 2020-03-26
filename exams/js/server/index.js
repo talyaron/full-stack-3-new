@@ -5,6 +5,8 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+app.use(express.static('public'))
+
 const messages = [
     { author: 'Sam', message: "hello all", date: 34234234 },
     { author: 'Ben', message: 'Hi to too', date: 3123152 }
