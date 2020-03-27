@@ -39,7 +39,9 @@ app.get('/authors',(req, res)=>{
     res.send(authorsArray);
 })
 
-app.get('/message-by-author', (req, res) => {
+app.post('/message-by-author', (req, res) => {
+    const { author } = req.body;
+
     let authors = {}
     messages.forEach(message => {
         if (authors.hasOwnProperty(message.author)) {
@@ -48,8 +50,8 @@ app.get('/message-by-author', (req, res) => {
             authors[message.author] = [{ message: message.message, date: message.date }]
         }
     });
-
-    res.send(authors)
+   
+    res.send(authors[author])
 })
 
 const port = process.env.PORT || 3001;
