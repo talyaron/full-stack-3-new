@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let x = {
+            name: 'just x',
+            sayHello: () => {
+                console.log('arrow')
+                console.dir(this)
+            },
+            sayH: function () {
+                console.log('function')
+                console.dir(this)
+            }
+        }
+
+        x.sayHello();
+        x.sayH();
+
+        function objOwner() {
+            let y = {
+                name: 'class',
+                sayHello: () => {
+                    console.dir(this)
+                },
+                sayH: function () {
+                    console.dir(this)
+                }
+            }
+            console.log(this.name)
+            console.log('inside objOwner')
+            y.sayHello();
+            y.sayH();
+
+        }
+
+        objOwner();
+
+        class X {
+            constructor() {
+                // this.arrowWithBind = this.methodWithBind.bind(this)
+            }
+            name = 'class';
+            arrow = () => {
+                console.log('arrow')
+                console.dir(this)
+            }
+            func = function () {
+                console.log('function')
+                console.dir(this)
+            }
+        }
+
+        let xClass = new X();
+
+        console.log('in the instance itself')
+        xClass.arrow();
+        xClass.func();
+
+        console.log('under other boject')
+        x.arrow = xClass.arrow;
+        x.func = xClass.func;
+
+
+        x.arrow();
+        x.func();
+
+        // ‘this’, always references the owner of the function it is in, 
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+//create bubble sorting
+https://www.w3resource.com/w3r_images/bubble-short.png
+
+//Write a JavaScript program to check whether a number is even or not.
+
+//what is clouser, and when to use it?
+
+what is 'this', and what is it used for?
+
+//write a regexp search engine (with DOM form)
+
+what is the difrences between arrow function and anonymous function
+
+what is hositing
+
