@@ -4,7 +4,9 @@
 /node_modules
 /.pnp
 .pnp.js
-/.txt
+
+# ignore all text files
+*.txt
 
 # testing
 /coverage
