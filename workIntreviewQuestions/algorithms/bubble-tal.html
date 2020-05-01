@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let initArray = [100, 3, 7, 2, 9, 2, 1, 12, 0, -3, -300, -2, 4]
+
+        function bubbleSortTal(arr) {
+            let itration = 0;
+            let goToPass = true;
+            while (goToPass == true) {
+
+
+                let wasSwiped = false;
+
+                let i = 0;
+                //swipe
+                while (i < arr.length - 1) {
+
+                    let a = arr[i], b = arr[i + 1];
+                    if (a > b) {
+                        arr[i] = b; arr[i + 1] = a;
+                        wasSwiped = true;
+                    }
+
+                    itration++; i++;
+
+                }
+                goToPass = wasSwiped;
+            }
+            
+            console.log(`Tal Run ${itration} times in order to sort`);
+            console.log(arr)
+        }
+
+
+
+        // Ben
+
+        bubbleSortTal(initArray)
+
+        function BubSort(array) {
+            let itration = 0;
+            let check = 0;
+            for (let j = 0; j <= array.length; j++) {
+                for (let i = 0; i <= array.length; i++) {
+                    if (array[i] > array[i + 1]) {
+                        let temp = array[i + 1];
+                        array[i + 1] = array[i];
+                        array[i] = temp;
+
+                    }
+                    itration++;
+
+                }
+            }
+
+            console.log(`Ben bubbleSort run ${itration} times in order to sort`)
+            console.log(array)
+            
+        }
+
+        
+        BubSort(initArray);
+
+    </script>
+</body>
+
+</html>

@@ -24,24 +24,24 @@
         x.sayHello();
         x.sayH();
 
-        function objOwner() {
-            let y = {
-                name: 'class',
-                sayHello: () => {
-                    console.dir(this)
-                },
-                sayH: function () {
-                    console.dir(this)
-                }
-            }
-            console.log(this.name)
-            console.log('inside objOwner')
-            y.sayHello();
-            y.sayH();
+        // function objOwner() {
+        //     let y = {
+        //         name: 'class',
+        //         sayHello: () => {
+        //             console.dir(this)
+        //         },
+        //         sayH: function () {
+        //             console.dir(this)
+        //         }
+        //     }
+        //     console.log(this.name)
+        //     console.log('inside objOwner')
+        //     y.sayHello();
+        //     y.sayH();
 
-        }
+        // }
 
-        objOwner();
+        // objOwner();
 
         class X {
             constructor() {
