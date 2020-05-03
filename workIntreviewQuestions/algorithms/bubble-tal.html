@@ -10,7 +10,8 @@
 <body>
     <script>
 
-        let initArray = [100, 3, 7, 2, 9, 2, 1, 12, 0, -3, -300, -2, 4]
+        // let initArray = [100, 7, 3, 2, 9, 2, 1, 12, 0, -3, -300, -2, 4, 0.1]
+        let initArray = [7, 1, 2, 3, 4, 5]
 
         function bubbleSortTal(arr) {
             let itration = 0;
@@ -35,22 +36,22 @@
                 }
                 goToPass = wasSwiped;
             }
-            
+
             console.log(`Tal Run ${itration} times in order to sort`);
             console.log(arr)
         }
 
-
-
+        
+        bubbleSortTal([...initArray])
         // Ben
 
-        bubbleSortTal(initArray)
+      
 
         function BubSort(array) {
             let itration = 0;
             let check = 0;
-            for (let j = 0; j <= array.length; j++) {
-                for (let i = 0; i <= array.length; i++) {
+            for (let j = 0; j < array.length; j++) {
+                for (let i = 0; i < array.length; i++) {
                     if (array[i] > array[i + 1]) {
                         let temp = array[i + 1];
                         array[i + 1] = array[i];
@@ -64,12 +65,106 @@
 
             console.log(`Ben bubbleSort run ${itration} times in order to sort`)
             console.log(array)
-            
+
         }
 
-        
-        BubSort(initArray);
 
+        BubSort([...initArray]);
+
+
+        // Ofir
+
+        let ofirIt = 0;
+        let answar = OfirbubbleSort([...initArray])
+
+        console.log(answar)
+
+        function OfirbubbleSort(array) {
+
+            if (array.length == 0) {
+                return console.log('empty array')
+            } else {
+
+                while (checkIfArrayIsSorted(array)) {
+
+                    ofirIt++;
+                    
+
+                    for (let i = 0; i < array.length; i++) {
+
+                        ofirIt++;
+                      
+
+                        let num1 = array[i];
+                        let num2 = array[i + 1]
+
+                        if (num1 > num2) {
+
+                            chanceNumbers(array, i)
+                            // swipe
+                         
+                        }
+
+                    }
+                }
+
+                console.log(array)
+                console.log(`Ofir bubbleSort run ${ofirIt} times in order to sort`)
+                return `this is the sorted array :: ${array}`
+            }
+        }
+        function checkIfArrayIsSorted(array) {
+
+            let answar = false;
+            for (let i = 0; i < array.length; i++) {
+                num1 = array[i]
+                num2 = array[i + 1]
+
+                ofirIt++;
+               
+
+                if (num1 > num2) {
+                    answar = true;
+                    return answar
+                }
+               
+
+            }
+            console.log('checkIfArrayIsSorted', answar)
+            return answar
+        }
+
+        function chanceNumbers(array, index) {
+
+            let num = array[index]
+            array[index] = array[index + 1]
+            array[index + 1] = num;
+
+            ofirIt++;
+
+        }
+
+
+        //Roman
+
+        function sortArr(arr) {
+            let it = 0;
+            for (let i = 0; i < arr.length; i++) {
+                for (let j = 0; j < arr.length; j++) {
+                    if (arr[j] > arr[j + 1]) {
+                        let swapped = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = swapped
+                    }
+                    it++;
+                }
+            }
+            console.log(`Romanb and Vered bubbleSort run ${it} times in order to sort`)
+            return arr;
+        }
+
+
+        console.log(sortArr([...initArray]));
     </script>
 </body>
 

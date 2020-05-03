@@ -7,7 +7,8 @@ https://www.w3resource.com/w3r_images/bubble-short.png
 
 what is 'this', and what is it used for?
 
-//write a regexp search engine (with DOM form)
+//write a regexp search engine (with DOM form) (for instance user enter "jer" and he will get 'jerusalem', 'jericho')
+// write factorial question
 
 what is the difrences between arrow function and anonymous function
 
